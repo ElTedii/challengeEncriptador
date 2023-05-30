@@ -1,0 +1,31 @@
+header{
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja h1 img{
+    width: 70px;
+    height: 70px;
+}
+
+footer{
+    text-align: center;
+    background: url(graphResources/bg.jpg);
+    padding: 40px;
+}
+
+footer img{
+    width: 150px;
+    height: 150px;
+}
+
+.piePagina{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
