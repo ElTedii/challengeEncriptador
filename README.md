@@ -31,7 +31,7 @@ Por ejemplo:
 "gato" => "gaitober"
 ```
 ```
-gaitober" => "gato"
+"gaitober" => "gato"
 ```
 - La página tiene campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 - El resultado se muestra en la pantalla.
