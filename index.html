@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Challenge 01 - Encriptador</title>
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="reset.css/reset.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
-    <header>
-        <div class="caja">
-            <h1><img src="graphResources/tedssLogo.png" alt="Logo de Tedss"></h1>
-        </div>
-    </header>
+
     <body>
-        
+        <header>
+            <div class="logo">
+                <h1><img src="Resources/tedssLogo.png" alt="Logo Tedss"></h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <textarea class="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <h6 class="info"> <img src="Resources/Vector.png" alt=""> Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btnEncriptar">Encriptar</button>
+                    <button class="btnDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensajeEncriptado" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="btnCopiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <img src="Resources/tedssLogoWhite.png" alt="Logo de Tedss">
+            <p class="piePagina"> Desarrollador: Ismael Cruz </p>
+            <p class="piePagina"> GitHub: <a href="https://github.com/ElTedii/">ElTedii</a></p>
+        </footer>
     </body>
-    <footer>
-        <img src="graphResources/tedssLogoWhite.png" alt="Logo de Tedss">
-        <p class="piePagina"> Desarrollador: Ismael Cruz </p>
-        <p class="piePagina"> GitHub: <a href="https://github.com/ElTedii">ElTedii</a></p>
-    </footer>
 </html>
