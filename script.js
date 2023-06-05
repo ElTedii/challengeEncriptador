@@ -14,9 +14,40 @@ function validar(){
     }
 }
 
+
+function btnEncriptar(){
+    if(!validar()){
+        const msgEncrpt = encriptar(mensaje.value)
+        mensajeEncriptado.value = msgEncrpt;
+        mensajeEncriptado.style.backgroundImage = "none"
+        mensaje.value = "";
+        copia.style.display = "block"
+    }
+}
+
+function encriptar(msgOrg){
+    let diccEncript = {
+        'e' : 'enter',
+        'i' : 'imes', 
+        'a' : 'ai',
+        'o' : 'ober',
+        'u' : 'ufat'
+    }
+
+    let str = '';
+
+    for(const c of msgOrg){
+        if(diccEncript[c])
+            str = `${str}${diccEncript[c]}`;
+        else
+            str = `${str}${c}`;
+    }
+    return str;
+}
+
 function copiar(){
     mensaje.select();
-    navigator.clipboard.writeText(mensaje.value)
+    navigator.clipboard.writeText(mensajeEncriptado.value)
     mensaje.value = "";
     alert("Texto Copiado")
 }
